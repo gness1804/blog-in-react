@@ -1,8 +1,11 @@
 import React, { Component } from 'react';
+import { RouteHandler } from 'react-router';
 import Header from './Header';
 import Sidebar from './Sidebar';
 import Posts from './Posts';
 import Search from './Search';
+
+import posts from './posts';
 
 const ReactDOM = require('react-dom');
 
@@ -25,7 +28,7 @@ class Application extends Component {
         <Search searchPage={this.searchPage} />
         <section className="master-container">
           <Sidebar />
-        {this.props.children}
+          {this.props.children}
       </section>
       </div>
     );
