@@ -5,17 +5,17 @@ import Sidebar from './Sidebar';
 import Posts from './Posts';
 import Search from './Search';
 
-import posts from './posts';
+// import posts from './posts';
 
 const ReactDOM = require('react-dom');
 
 class Application extends Component {
-  constructor() {
-    super();
-    this.state = {
-      posts: posts || [],
-    };
-  }
+  // constructor() {
+  //   super();
+  //   this.state = {
+  //     posts: posts || [],
+  //   };
+  // }
 
   searchPage(value) {
     window.find(value);
@@ -29,7 +29,7 @@ class Application extends Component {
         <section className="master-container">
           <Sidebar />
           {this.props.children}
-      </section>
+        </section>
       </div>
     );
   }

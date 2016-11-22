@@ -1,12 +1,30 @@
 import React, {Component} from 'react';
+import EachPost from './EachPost';
+import posts from './posts';
+
 const ReactDOM = require('react-dom');
 
 class Posts extends Component {
+  constructor() {
+    super();
+    this.state = {
+      posts: posts || [],
+    };
+  }
 
   render() {
-    console.log(this.props.posts);
+    let postList;
+
+    const { posts } = this.state;
+
+    if (posts) {
+      postList = posts.map(p => <EachPost {...p} />);
+    }
+
     return (
-      <div>I am the Posts section.</div>
+      <div>
+        {postList}
+      </div>
     );
   }
 
