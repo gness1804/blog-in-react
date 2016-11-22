@@ -1,12 +1,25 @@
-import React, {Component} from 'react';
+import React, { Component } from 'react';
+import Header from './Header';
+import Sidebar from './Sidebar';
+import Posts from './Posts';
 
 const ReactDOM = require('react-dom');
 
 class Application extends Component {
+  constructor() {
+    super();
+    this.state = {
+      posts: [],
+    };
+  }
 
   render() {
     return (
-      <div>Hello! This is a test. If I can see this, then React is set up correctly.</div>
+      <div>
+        <Header />
+        <Sidebar />
+        {this.props.children}
+      </div>
     );
   }
 
