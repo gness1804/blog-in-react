@@ -1,2 +1,232 @@
 @import "variables.scss";
-@import "mixins.scss"; @import "debug.scss"
+@import "mixins.scss";
+@import "debug.scss";
+
+body{
+	background-color: $main-background;
+	font-family: $main-font;
+}
+
+header {
+	// background-image: url('../images/background-img.jpg');
+	background-size: 1400px 100px;
+	margin-bottom: 50px;
+	margin: auto;
+}
+
+h1 {
+	font-size: 60px;
+	text-align: center;
+	text-shadow: 2px 2px silver;
+}
+
+h3 {
+	font-size: 30px;
+	text-align: center;
+}
+
+.border-test {
+	border: 1px dotted red; /* temp */
+}
+
+.master-container {
+	/*border: 1px dotted red;*/
+	margin: auto;
+	width: 1000px;
+}
+
+.mainmenu {
+	margin: auto;
+	text-align: center;
+}
+
+.mainmenu li {
+	background-color:  #a6a6a6;
+	border-radius: 5px;
+	border: 2px solid gray;
+	display: inline;
+	font-size: 25px;
+	margin-right: 60px;
+	padding-right: 50px;
+	position: relative;
+}
+
+.mainmenu li:hover {
+	color: white;
+}
+
+.truncated {
+	height: 800px;
+	overflow: auto;
+}
+
+a.link1:hover {
+	color: red;
+}
+
+a.link1:link {
+	text-decoration: none;
+	color: white;
+}
+
+a.link1:visited {
+	color: black;
+}
+
+.current-page {
+	font-style: italic;
+	font-weight: bold;
+}
+
+#me{
+	display: block;
+	margin: auto;
+	width: 200px;
+}
+
+.link-section {
+	/*background: linear-gradient(to bottom, white, rgb(173, 167, 177));*/
+	display: inline-block;
+  float: right;
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+@media screen and (max-width: 950px) { /* makes sidebar disappear */
+  .link-section {display: none;}
+}
+
+input[type="submit"] {
+	border: 1px solid gray;
+  border-radius: 5px;
+}
+
+input[type="submit"]:hover {
+	background-color: white;
+}
+
+.template {
+	background-color: white;
+	border: 2px solid gray;
+	margin-bottom: 60px;
+	text-align: center;
+	width: 700px;
+}
+
+.template h2 {
+	font-size: 40px;
+	margin: auto;
+	margin-top: 20px;
+  max-width: 600px;
+	text-align: center;
+}
+
+.template p {
+	font-size: 20px;
+	padding: 25px;
+	text-align: left;
+}
+
+.template p::first-letter {
+	font-size: 2em;
+}
+
+.template img {
+	max-height: 350px;
+	width: 300px;
+}
+
+.main-container {
+	width: 1000px;
+}
+
+.template .date {
+	font-size: 16px !important;
+	font-style: italic;
+	text-align: center;
+}
+
+.date::first-letter {
+	font-size: 16px !important;
+	font-style: italic;
+}
+
+a:link {
+	color: #0000e6
+	// text-decoration: none;
+}
+
+a:visited {
+	color: magenta;
+}
+
+a:hover {
+	color: red;
+}
+
+.recent {
+	text-align: center;
+}
+
+.recent h5 {
+	font-size: 20px;
+	margin-bottom: 50px;
+	/*text-align: center;*/
+}
+
+.recent li {
+	list-style-type: none;
+	margin: 10px 0px;
+}
+
+#recFrame{
+	height: 250px;
+	margin: 50px 0px;
+	width: 200px;
+	/*margin: auto;*/
+}
+
+#search {
+	margin: 40px 0;
+	text-align: center;
+}
+
+#totop {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	position: relative;
+}
+
+.entry-is-hidden {
+	display: none;
+}
+
+.template .linked-list-pic {
+	width: 600px;
+  height: 800px;
+}
+
+.myob-copy-italic {
+	font-style: italic;
+}
+
+textarea {
+	border: 1px solid black;
+	height: 500px;
+	display: block;
+	margin: auto;
+	width: 400px;
+}
+
+.template .myob-screen-shot {
+	width: 600px;
+	height: 800px;
+}
+
+.myob-code-case {
+	background-color: rgb(196, 215, 211);
+	border: 1px solid rgb(196, 215, 211);
+	border-radius: 5px;
+	font-family: 'Space Mono', monospace;
+}

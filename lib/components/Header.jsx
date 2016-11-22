@@ -18,7 +18,9 @@ class Header extends Component {
 						<Link to="/aboutme" className="link1">
 							<li>About Me</li>
 						</Link>
-						<a className="link1" href="http://www.grahamnessler.com"><li>Portfolio</li></a>
+						<a className="link1" href="http://www.grahamnessler.com">
+              <li>Portfolio</li>
+						</a>
 					</ul>
 				</header>
       </div>
