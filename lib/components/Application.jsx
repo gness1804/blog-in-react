@@ -10,7 +10,7 @@ class Application extends Component {
   constructor() {
     super();
     this.state = {
-      posts: [],
+      posts: posts || [],
     };
   }
 

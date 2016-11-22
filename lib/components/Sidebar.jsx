@@ -1,6 +1,8 @@
 import React, {Component} from 'react';
 import { Link } from 'react-router';
 
+import RecentPosts from './RecentPosts';
+
 const ReactDOM = require('react-dom');
 
 class Sidebar extends Component {
@@ -12,8 +14,7 @@ class Sidebar extends Component {
           <Link to="/aboutme">
             <img id="me" src="../../images/headshot.jpg" alt="Headshot of me."></img>
           </Link>
-
-			       <iframe src="recent.html" id="recFrame"></iframe>
+			    <RecentPosts />
 		    </aside>
       </div>
     );
