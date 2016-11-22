@@ -22,9 +22,11 @@ class Application extends Component {
     return (
       <div>
         <Header />
-        <Search searchPage={this.searchPage}/>
-        <Sidebar />
+        <Search searchPage={this.searchPage} />
+        <section className="master-container">
+          <Sidebar />
         {this.props.children}
+      </section>
       </div>
     );
   }
