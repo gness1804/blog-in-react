@@ -6,16 +6,16 @@ class EachPost extends Component {
 
   render() {
 
-    const { title, date, image, creditLine, body } = this.props;
+    const { title, date, image, note, body } = this.props;
 
     return (
       <div className="template">
 			  <h2>{title}</h2>
 			   <p className="date">{date}</p>
 				 <img src={image} alt="The image for the topic."></img>
-				 <h4>Image courtesy of {creditLine}</h4>
+				 <h4>{note}</h4>
 				 <p>
-					 {body}
+					{body}
 				 </p><br></br>
 		</div>
     );
