@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import Header from './Header';
 import Sidebar from './Sidebar';
 import Posts from './Posts';
+import Search from './Search';
 
 const ReactDOM = require('react-dom');
 
@@ -13,10 +14,15 @@ class Application extends Component {
     };
   }
 
+  searchPage(value) {
+    window.find(value);
+  }
+
   render() {
     return (
       <div>
         <Header />
+        <Search searchPage={this.searchPage}/>
         <Sidebar />
         {this.props.children}
       </div>

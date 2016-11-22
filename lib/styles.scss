@@ -8,7 +8,7 @@ body{
 }
 
 header {
-	// background-image: url('../images/background-img.jpg');
+	background-color: rgb(253, 251, 255);
 	background-size: 1400px 100px;
 	margin-bottom: 50px;
 	margin: auto;
@@ -25,12 +25,7 @@ h3 {
 	text-align: center;
 }
 
-.border-test {
-	border: 1px dotted red; /* temp */
-}
-
 .master-container {
-	/*border: 1px dotted red;*/
 	margin: auto;
 	width: 1000px;
 }
@@ -85,7 +80,6 @@ a.link1:visited {
 }
 
 .link-section {
-	/*background: linear-gradient(to bottom, white, rgb(173, 167, 177));*/
 	display: inline-block;
   float: right;
   margin-bottom: 50px;
@@ -171,7 +165,6 @@ a:hover {
 .recent h5 {
 	font-size: 20px;
 	margin-bottom: 50px;
-	/*text-align: center;*/
 }
 
 .recent li {
@@ -183,7 +176,6 @@ a:hover {
 	height: 250px;
 	margin: 50px 0px;
 	width: 200px;
-	/*margin: auto;*/
 }
 
 #search {
