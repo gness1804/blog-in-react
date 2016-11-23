@@ -22,6 +22,7 @@ class PostList extends Component {
   }
 
   toggleShowAllPosts() {
+    this.setState({ allPosts: posts });
     this.setState({ showAllPosts: !this.state.showAllPosts });
   }
 
