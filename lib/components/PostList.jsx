@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import EachPost from './EachPost';
-import posts from './posts';
+import posts from './posts.js';
 
 const ReactDOM = require('react-dom');
 
@@ -8,17 +8,17 @@ class PostList extends Component {
   constructor() {
     super();
     this.state = {
-      posts: posts || [],
+      allPosts: posts || [],
     };
   }
 
   render() {
     let postList;
 
-    const { posts } = this.state;
+    const { allPosts } = this.state;
 
-    if (posts) {
-      postList = posts.map(p => <EachPost {...p} />);
+    if (allPosts) {
+      postList = allPosts.map(p => <EachPost {...p} />);
     }
 
     return (

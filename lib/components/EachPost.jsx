@@ -1,8 +1,9 @@
 import React, {Component} from 'react';
 const ReactDOM = require('react-dom');
 
-class EachPost extends Component {
+const $ = require('jquery');
 
+class EachPost extends Component {
 
   render() {
 
