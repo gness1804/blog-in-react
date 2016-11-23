@@ -23,12 +23,14 @@ class PostList extends Component {
 
     const { allPosts, showAllPosts } = this.state;
 
+    const sortedList = allPosts.sort((a, b) => { a.id > b.id });
+
     if (allPosts) {
       if (!this.state.showAllPosts) {
-        fivePostsOrAll = allPosts.slice(0, 5);
+        fivePostsOrAll = sortedList.slice(0, 5);
       }
       else {
-        fivePostsOrAll = allPosts;
+        fivePostsOrAll = sortedList;
       }
     }
 
