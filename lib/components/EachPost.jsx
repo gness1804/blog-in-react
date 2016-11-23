@@ -1,5 +1,4 @@
 import React, {Component} from 'react';
-const ReactDOM = require('react-dom');
 
 class EachPost extends Component {
 
@@ -12,10 +11,8 @@ class EachPost extends Component {
 			  <h2>{title}</h2>
 			   <p className="date">{date}</p>
 				 <img src={image} alt="The image for the topic."></img>
-				 <h4>{note}</h4>
-				 <p>
-					{body}
-				 </p><br></br>
+				 <h4 className="note">{note}</h4>
+				 <p className="body">{body}</p><br></br>
 		</div>
     );
   }
