@@ -22,7 +22,7 @@ class EachPost extends Component {
 			   <p className="date">Posted on {date}</p>
          {topLinks}
 				 <img src={image} alt="The image for the topic."></img>
-                                 { note ? <h4 className="note">{note}</h4> : ''}
+        { note ? <h4 className="note">{note}</h4> : ''}
 				 <p className="body">{body}</p>
          {secondPara ? <p className="second-para">{secondPara}</p> : ''}
          {thirdPara ? <p className="third-para">{thirdPara}</p> : ''}
