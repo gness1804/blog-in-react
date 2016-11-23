@@ -21,7 +21,7 @@ class PostList extends Component {
     let postList;
     let fivePostsOrAll;
 
-    const { allPosts } = this.state;
+    const { allPosts, showAllPosts } = this.state;
 
     if (allPosts) {
       if (!this.state.showAllPosts) {
@@ -39,7 +39,7 @@ class PostList extends Component {
     return (
       <div>
         {postList}
-        <button onClick={() => { this.toggleShowAllPosts() }}>Show All Posts</button>
+        <button onClick={() => { this.toggleShowAllPosts() }}>{showAllPosts ? 'Hide Older Posts' : 'Show All Posts'}</button>
       </div>
     );
   }
