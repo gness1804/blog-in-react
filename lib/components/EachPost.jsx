@@ -13,7 +13,7 @@ class EachPost extends Component {
          {github ? <a href={github}><h3>Github</h3></a> : ''}
          {interactiveLink ? <a href={interactiveLink}><h3>Check it Out!</h3></a> : ''}
 				 <img src={image} alt="The image for the topic."></img>
-				 <h4 className="note">{note}</h4>
+                                 { note ? <h4 className="note">{note}</h4> : ''}
 				 <p className="body">{body}</p><br></br>
 		</div>
     );
