@@ -14,11 +14,16 @@ class PostList extends Component {
 
   render() {
     let postList;
+    let fivePosts;
 
     const { allPosts } = this.state;
 
     if (allPosts) {
-      postList = allPosts.map(p => <EachPost {...p} />);
+      fivePosts = allPosts.slice(0, 5);
+    }
+
+    if (allPosts) {
+      postList = fivePosts.map(p => <EachPost {...p} />);
     }
 
     return (
