@@ -13,6 +13,14 @@ class PostList extends Component {
     };
   }
 
+  showOnlyOnePost(id) {
+    const thisPost = id.id;
+    const onePost = this.state.allPosts.filter((post) => {
+      return post.id === thisPost;
+     });
+     console.log(onePost);
+  }
+
   toggleShowAllPosts() {
     this.setState({ showAllPosts: !this.state.showAllPosts });
   }
@@ -35,7 +43,7 @@ class PostList extends Component {
     }
 
     if (allPosts) {
-      postList = fivePostsOrAll.map(p => <EachPost {...p} />);
+      postList = fivePostsOrAll.map(p => <EachPost {...p} showOnlyOnePost={this.showOnlyOnePost.bind(this)}/>);
     }
 
     return (

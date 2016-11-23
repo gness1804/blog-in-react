@@ -2,11 +2,15 @@ import React, { Component } from 'react';
 
 class EachPost extends Component {
 
+  showOnlyOnePost(id) {
+    this.props.showOnlyOnePost(id);
+  }
+
   render() {
 
     let topLinks;
 
-    const { title, date, image, note, body, github, interactiveLink, secondPara, thirdPara } = this.props;
+    const { title, date, image, note, body, github, interactiveLink, secondPara, thirdPara, id } = this.props;
 
     if (github || interactiveLink) {
       topLinks = <div className="links-container-top">
@@ -18,7 +22,7 @@ class EachPost extends Component {
 
     return (
       <div className="template">
-			  <h2>{title}</h2>
+			  <h2 onClick={() => {this.showOnlyOnePost({id})} }>{title}</h2>
 			   <p className="date">Posted on {date}</p>
          {topLinks}
 				 <img src={image} alt="The image for the topic."></img>
