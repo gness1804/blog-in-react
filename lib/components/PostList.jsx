@@ -39,7 +39,7 @@ class PostList extends Component {
     return (
       <div>
         {postList}
-        <button onClick={() => { this.toggleShowAllPosts() }}>{showAllPosts ? 'Hide Older Posts' : 'Show All Posts'}</button>
+        <button className="show-all-posts-button" onClick={() => { this.toggleShowAllPosts() }}>{showAllPosts ? 'Hide Older Posts' : 'Show All Posts'}</button>
       </div>
     );
   }
