@@ -1,3 +1,5 @@
+import React from 'react';
+
 const posts = [
   {
     title: 'iOS Class with Erika Carlson, 10-02-16',
@@ -11,7 +13,7 @@ const posts = [
     title: "Bluecifer's Revenge",
     image: '../../images/game-time.png',
     note: 'See this on <a href="https://github.com/gness1804/game-time" target="_blank">Github,</a> and try it out <a href="https://gprocell927.github.io/game-time/" target="_blank">live</a>.',
-    body: 'Hi',
+    body: '',
   },
 
 ];
