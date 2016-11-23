@@ -9,26 +9,37 @@ class PostList extends Component {
     super();
     this.state = {
       allPosts: posts || [],
+      showAllPosts: false,
     };
+  }
+
+  toggleShowAllPosts() {
+    this.setState({ showAllPosts: !this.state.showAllPosts });
   }
 
   render() {
     let postList;
-    let fivePosts;
+    let fivePostsOrAll;
 
     const { allPosts } = this.state;
 
     if (allPosts) {
-      fivePosts = allPosts.slice(0, 5);
+      if (!this.state.showAllPosts) {
+        fivePostsOrAll = allPosts.slice(0, 5);
+      }
+      else {
+        fivePostsOrAll = allPosts;
+      }
     }
 
     if (allPosts) {
-      postList = fivePosts.map(p => <EachPost {...p} />);
+      postList = fivePostsOrAll.map(p => <EachPost {...p} />);
     }
 
     return (
       <div>
         {postList}
+        <button onClick={() => { this.toggleShowAllPosts() }}>Show All Posts</button>
       </div>
     );
   }
