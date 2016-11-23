@@ -4,7 +4,7 @@ import posts from './posts';
 
 const ReactDOM = require('react-dom');
 
-class Posts extends Component {
+class PostList extends Component {
   constructor() {
     super();
     this.state = {
@@ -31,4 +31,4 @@ class Posts extends Component {
 }
 
 
-export default Posts;
+export default PostList;
