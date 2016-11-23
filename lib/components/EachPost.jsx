@@ -22,7 +22,7 @@ class EachPost extends Component {
 
     return (
       <div className="template">
-			  <h2 onClick={() => {this.showOnlyOnePost({id})} }>{title}</h2>
+			  <h2 className="each-post-headline" onClick={() => {this.showOnlyOnePost({id})} }>{title}</h2>
 			   <p className="date">Posted on {date}</p>
          {topLinks}
 				 <img src={image} alt="The image for the topic."></img>

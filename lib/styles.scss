@@ -234,6 +234,15 @@ textarea {
 	font-family: 'Space Mono', monospace;
 }
 
+.each-post-headline {
+	cursor: pointer;
+
+	&:hover {
+		color: red;
+	}
+
+}
+
 .links-container-top {
 	align-items: center;
   border: 2px solid gray;

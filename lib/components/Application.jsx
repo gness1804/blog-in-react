@@ -4,17 +4,9 @@ import Header from './Header';
 import Sidebar from './Sidebar';
 import Search from './Search';
 
-// import posts from './posts';
-
 const ReactDOM = require('react-dom');
 
 class Application extends Component {
-  // constructor() {
-  //   super();
-  //   this.state = {
-  //     posts: posts || [],
-  //   };
-  // }
 
   searchPage(value) {
     window.find(value);
