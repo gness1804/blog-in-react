@@ -14,7 +14,9 @@ class EachPost extends Component {
          {interactiveLink ? <a href={interactiveLink}><h3>Check it Out!</h3></a> : ''}
 				 <img src={image} alt="The image for the topic."></img>
                                  { note ? <h4 className="note">{note}</h4> : ''}
-				 <p className="body">{body}</p><br></br>
+				 <p className="body">{body}</p>
+         <p className="second-para">Foo</p>
+         <p className="third-para">Foo</p>
 		</div>
     );
   }

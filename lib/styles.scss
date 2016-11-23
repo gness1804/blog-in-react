@@ -116,13 +116,19 @@ input[type="submit"]:hover {
 	text-align: center;
 }
 
-.template p {
+.body {
 	font-size: 20px;
-	padding: 25px;
+	padding: 10px;
 	text-align: left;
 }
 
-.template p::first-letter {
+.second-para, .third-para {
+  font-size: 20px;
+	padding: 10px;
+	text-align: left;
+}
+
+.body::first-letter {
 	font-size: 2em;
 }
 
