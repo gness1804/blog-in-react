@@ -10,8 +10,10 @@ class EachPost extends Component {
       <div className="template">
 			  <h2>{title}</h2>
 			   <p className="date">Posted on {date}</p>
-         {github ? <a href={github}><h3>Github</h3></a> : ''}
-         {interactiveLink ? <a href={interactiveLink}><h3>Check it Out!</h3></a> : ''}
+         <div className="links-container-top">
+           {github ? <a href={github}><h3 className="github">Github</h3></a> : ''}
+           {interactiveLink ? <a href={interactiveLink}><h3 className="check-it-out">Check it Out!</h3></a> : ''}
+         </div>
 				 <img src={image} alt="The image for the topic."></img>
                                  { note ? <h4 className="note">{note}</h4> : ''}
 				 <p className="body">{body}</p>
