@@ -234,6 +234,17 @@ textarea {
 	font-family: 'Space Mono', monospace;
 }
 
+.links-container-top {
+	align-items: center;
+  border: 2px solid gray;
+	display: flex;
+	justify-content: center;
+	margin: 0 auto;
+	width: 60%;
+}
+
 .github, .check-it-out {
-  display: inline-block;
+  // display: inline-block;
+	font-size: 26px;
+  margin: 0 15px;
 }
