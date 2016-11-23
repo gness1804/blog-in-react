@@ -18,7 +18,7 @@ class PostList extends Component {
     const onePost = this.state.allPosts.filter((post) => {
       return post.id === thisPost;
      });
-     console.log(onePost);
+    this.setState({ allPosts: onePost });
   }
 
   toggleShowAllPosts() {
