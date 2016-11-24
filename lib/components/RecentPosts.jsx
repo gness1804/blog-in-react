@@ -1,13 +1,12 @@
 import React, { Component } from 'react';
-const ReactDOM = require('react-dom');
 
 class RecentPosts extends Component {
 
   showMostRecentPosts(post) {
     const id = post.id;
     const title = post.title;
-    return(
-      <div className="recent-posts-each-post" onClick={() => {this.showOnlyOnePost({id})} }>{title}</div>
+    return (
+      <div key={post.id} className="recent-posts-each-post" onClick={() => { this.showOnlyOnePost({ id }); }}>{title}</div>
     );
   }
 
@@ -16,7 +15,6 @@ class RecentPosts extends Component {
   }
 
   render() {
-
     const onlyFivePosts = this.props.posts.slice(0, 5);
 
     return (

@@ -25,7 +25,11 @@ class PostList extends Component {
     const result = this.state.allPosts.filter((post) => {
       return includes(post, target);
     });
-    console.log(result);
+    if (result.length > 0) {
+      this.setState({ allPosts: result });
+    } else {
+      alert('Sorry, your search did not match any results.');
+    }
   }
 
   showOnlyOnePost(id) {
@@ -60,7 +64,7 @@ class PostList extends Component {
     }
 
     if (allPosts) {
-      postList = fivePostsOrAll.map(p => <EachPost {...p} showOnlyOnePost={this.showOnlyOnePost.bind(this)}/>);
+      postList = fivePostsOrAll.map(p => <EachPost {...p} showOnlyOnePost={this.showOnlyOnePost.bind(this)} key={p.id} />);
     }
 
     return (

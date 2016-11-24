@@ -21,7 +21,7 @@ class EachPost extends Component {
 
 
     return (
-      <div className="template">
+      <div className="template truncated">
 			  <h2 className="each-post-headline" onClick={() => {this.showOnlyOnePost({id})} }>{title}</h2>
 			   <p className="date">Posted on {date}</p>
          {topLinks}
