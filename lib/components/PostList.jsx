@@ -17,11 +17,11 @@ class PostList extends Component {
   }
 
   recordSearchString(value) {
-    console.log(value);
+    this.setState({ searchString: value });
   }
 
   searchPage() {
-
+    console.log(this.state.searchString);
   }
 
   showOnlyOnePost(id) {
@@ -61,7 +61,7 @@ class PostList extends Component {
 
     return (
       <div>
-        <Search searchPage={this.searchPage} recordSearchString={this.recordSearchString.bind(this)}/>
+        <Search handleClick={() => { this.searchPage() }} recordSearchString={this.recordSearchString.bind(this)}/>
         <Sidebar posts={allPosts} showOnlyOnePost={this.showOnlyOnePost.bind(this)}/>
         {postList}
         <button className="show-all-posts-button" onClick={() => { this.toggleShowAllPosts() }}>{showAllPosts ? 'Hide Older Posts' : 'Show All Posts'}</button>
