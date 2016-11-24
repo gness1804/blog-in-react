@@ -7,6 +7,10 @@ const ReactDOM = require('react-dom');
 
 class Sidebar extends Component {
 
+  showOnlyOnePost(id) {
+    this.props.showOnlyOnePost(id);
+  }
+
   render() {
     return (
       <div>
@@ -14,7 +18,7 @@ class Sidebar extends Component {
           <Link to="/aboutme">
             <img id="me" src="../../images/headshot.jpg" alt="Headshot of me."></img>
           </Link>
-			    <RecentPosts posts={this.props.posts}/>
+			    <RecentPosts posts={this.props.posts} showOnlyOnePost={this.showOnlyOnePost.bind(this)}/>
 		    </aside>
       </div>
     );

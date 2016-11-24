@@ -51,7 +51,7 @@ class PostList extends Component {
 
     return (
       <div>
-        <Sidebar posts={allPosts}/>
+        <Sidebar posts={allPosts} showOnlyOnePost={this.showOnlyOnePost.bind(this)}/>
         {postList}
         <button className="show-all-posts-button" onClick={() => { this.toggleShowAllPosts() }}>{showAllPosts ? 'Hide Older Posts' : 'Show All Posts'}</button>
       </div>
