@@ -3,9 +3,20 @@ const ReactDOM = require('react-dom');
 
 class RecentPosts extends Component {
 
+  showMostRecentPosts(post) {
+    return(
+      <div>{post.title}</div>
+    );
+  }
+
   render() {
+
     return (
-      <div>I am the Recent Posts section.</div>
+      <div>
+        <ul>
+          <li>{this.props.posts.map(this.showMostRecentPosts)}</li>
+        </ul>
+      </div>
     );
   }
 

@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import EachPost from './EachPost';
 import posts from './posts.js';
+import Sidebar from './Sidebar';
 
 const ReactDOM = require('react-dom');
 
@@ -29,6 +30,7 @@ class PostList extends Component {
   render() {
     let postList;
     let fivePostsOrAll;
+    let sidebarPosts;
 
     const { allPosts, showAllPosts } = this.state;
 
@@ -49,6 +51,7 @@ class PostList extends Component {
 
     return (
       <div>
+        <Sidebar posts={allPosts}/>
         {postList}
         <button className="show-all-posts-button" onClick={() => { this.toggleShowAllPosts() }}>{showAllPosts ? 'Hide Older Posts' : 'Show All Posts'}</button>
       </div>

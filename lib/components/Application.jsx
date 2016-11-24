@@ -18,7 +18,6 @@ class Application extends Component {
         <Header />
         <Search searchPage={this.searchPage} />
         <section className="master-container">
-          <Sidebar />
           {this.props.children}
         </section>
       </div>

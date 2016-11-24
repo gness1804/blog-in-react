@@ -14,7 +14,7 @@ class Sidebar extends Component {
           <Link to="/aboutme">
             <img id="me" src="../../images/headshot.jpg" alt="Headshot of me."></img>
           </Link>
-			    <RecentPosts />
+			    <RecentPosts posts={this.props.posts}/>
 		    </aside>
       </div>
     );
