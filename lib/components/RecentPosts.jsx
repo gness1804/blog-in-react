@@ -22,7 +22,7 @@ class RecentPosts extends Component {
     return (
       <div>
         <h2>Recent Posts</h2>
-        <p className="recent-posts-container">{onlyFivePosts.map(this.showMostRecentPosts.bind(this))}</p>
+        <div className="recent-posts-container">{onlyFivePosts.map(this.showMostRecentPosts.bind(this))}</div>
       </div>
     );
   }

@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 import EachPost from './EachPost';
 import posts from './posts.js';
 import Sidebar from './Sidebar';
+import Search from './Search';
 
 const ReactDOM = require('react-dom');
 
@@ -11,7 +12,16 @@ class PostList extends Component {
     this.state = {
       allPosts: posts || [],
       showAllPosts: false,
+      searchString: '',
     };
+  }
+
+  recordSearchString(value) {
+    console.log(value);
+  }
+
+  searchPage() {
+
   }
 
   showOnlyOnePost(id) {
@@ -51,6 +61,7 @@ class PostList extends Component {
 
     return (
       <div>
+        <Search searchPage={this.searchPage} recordSearchString={this.recordSearchString.bind(this)}/>
         <Sidebar posts={allPosts} showOnlyOnePost={this.showOnlyOnePost.bind(this)}/>
         {postList}
         <button className="show-all-posts-button" onClick={() => { this.toggleShowAllPosts() }}>{showAllPosts ? 'Hide Older Posts' : 'Show All Posts'}</button>

@@ -2,19 +2,13 @@ import React, {Component} from 'react';
 const ReactDOM = require('react-dom');
 
 class Search extends Component {
-  constructor() {
-    super();
-    this.state = {
-      searched: '',
-    };
-  }
 
   clearInput() {
     document.getElementById('searchbox1').value = '';
   }
 
   recordInput(e) {
-    this.setState({ searched: e.target.value });
+    this.props.recordSearchString(e.target.value);
   }
 
   searchPage() {
