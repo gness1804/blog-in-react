@@ -1,0 +1,11 @@
+@import "variables.scss";
+
+@mixin button-basic-formatting {
+  border: 1px solid gray;
+  border-radius: 5px;
+}
+
+@mixin button-basic-formatting-hover {
+  background-color: white;
+	cursor: pointer;
+}

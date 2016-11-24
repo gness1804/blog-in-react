@@ -91,13 +91,12 @@ a.link1:visited {
 }
 
 input[type="submit"] {
-	border: 1px solid gray;
-  border-radius: 5px;
-}
+	@include button-basic-formatting;
 
-input[type="submit"]:hover {
-	background-color: white;
-	cursor: pointer;
+  &:hover {
+    @include button-basic-formatting-hover;
+  }
+
 }
 
 .template {
@@ -203,6 +202,15 @@ a:hover {
 
 }
 
+.remove-filters-button {
+  @include button-basic-formatting;
+
+	&:hover{
+		@include button-basic-formatting-hover;
+	}
+
+}
+
 #search {
 	margin: 40px 0;
 	text-align: center;
@@ -273,14 +281,14 @@ textarea {
 }
 
 .show-all-posts-button {
+  @include button-basic-formatting;
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
 	position: relative;
 
 	&:hover {
-		background-color: white;
-		cursor: pointer;
+		@include button-basic-formatting-hover;
 	}
 
 }
