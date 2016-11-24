@@ -92,6 +92,7 @@ a.link1:visited {
 
 input[type="submit"] {
 	@include button-basic-formatting;
+	margin: 0 10px;
 
   &:hover {
     @include button-basic-formatting-hover;
@@ -204,6 +205,7 @@ a:hover {
 
 .remove-filters-button {
   @include button-basic-formatting;
+	margin: 0 10px;
 
 	&:hover{
 		@include button-basic-formatting-hover;

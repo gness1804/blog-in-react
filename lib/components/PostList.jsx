@@ -21,14 +21,16 @@ class PostList extends Component {
   }
 
   searchPage() {
-    const target = this.state.searchString;
-    const result = this.state.allPosts.filter((post) => {
-      return includes(post, target);
-    });
-    if (result.length > 0) {
-      this.setState({ allPosts: result });
-    } else {
-      alert('Sorry, your search did not match any results.');
+    if (this.state.searchString) {
+      const target = this.state.searchString;
+      const result = this.state.allPosts.filter((post) => {
+        return includes(post, target);
+      });
+      if (result.length > 0) {
+        this.setState({ allPosts: result });
+      } else {
+        alert('Sorry, your search did not match any results.');
+      }
     }
   }
 
