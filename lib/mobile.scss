@@ -3,17 +3,23 @@
 @media screen and (max-width: $breakpoint1) {
 
   .link-section {
-    display: none !important;
+    display: none;
   }
 
 }
 
 @media screen and (max-width: $breakpoint2) {
 
+  html {
+    width: 1000px;
+  }
+
   .mainmenu {
 
     li {
-      display: block !important;
+      display: block;
+      margin: 15px auto;
+      width: 50%;
     }
 
   }

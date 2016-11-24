@@ -1,7 +1,6 @@
 @import "variables.scss";
 @import "mixins.scss";
 @import "debug.scss";
-@import "mobile.scss";
 
 body{
 	background-color: $main-background;
@@ -309,3 +308,5 @@ textarea {
 .empty-space {
 	margin: 100px 0;
 }
+
+@import "mobile.scss";
