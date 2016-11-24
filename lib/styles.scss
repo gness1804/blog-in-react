@@ -14,6 +14,20 @@ header {
 	margin: auto;
 }
 
+.h1-link {
+  text-decoration: none;
+	color: black;
+
+	&:visited {
+		color: black;
+	}
+
+	&:hover {
+		color: black;
+	}
+
+}
+
 h1 {
 	font-size: 60px;
 	text-align: center;
@@ -293,4 +307,8 @@ textarea {
 		@include button-basic-formatting-hover;
 	}
 
+}
+
+.empty-space {
+	margin: 100px 0;
 }
