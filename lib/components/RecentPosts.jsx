@@ -7,7 +7,7 @@ class RecentPosts extends Component {
     const id = post.id;
     const title = post.title;
     return(
-      <div onClick={() => {this.showOnlyOnePost({id})} }>{title}</div>
+      <div className="recent-posts-each-post" onClick={() => {this.showOnlyOnePost({id})} }>{title}</div>
     );
   }
 
@@ -21,9 +21,8 @@ class RecentPosts extends Component {
 
     return (
       <div>
-        <ul>
-          <li>{onlyFivePosts.map(this.showMostRecentPosts.bind(this))}</li>
-        </ul>
+        <h2>Recent Posts</h2>
+        <p className="recent-posts-container">{onlyFivePosts.map(this.showMostRecentPosts.bind(this))}</p>
       </div>
     );
   }
