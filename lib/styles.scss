@@ -1,6 +1,7 @@
 @import "variables.scss";
 @import "mixins.scss";
 @import "debug.scss";
+@import "mobile.scss";
 
 body{
 	background-color: $main-background;
@@ -8,7 +9,7 @@ body{
 }
 
 header {
-	background-color: rgb(253, 251, 255);
+	background-color: white;
 	background-size: 1400px 100px;
 	margin-bottom: 50px;
 	margin: auto;
@@ -98,10 +99,6 @@ a.link1:visited {
   float: right;
   margin-bottom: 50px;
   text-align: center;
-}
-
-@media screen and (max-width: 950px) { /* makes sidebar disappear */
-  .link-section {display: none;}
 }
 
 input[type="submit"] {

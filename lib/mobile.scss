@@ -1,0 +1,21 @@
+@import "variables.scss";
+
+@media screen and (max-width: $breakpoint1) {
+
+  .link-section {
+    display: none !important;
+  }
+
+}
+
+@media screen and (max-width: $breakpoint2) {
+
+  .mainmenu {
+
+    li {
+      display: block !important;
+    }
+
+  }
+
+}
