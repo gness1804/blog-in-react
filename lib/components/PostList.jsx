@@ -1,10 +1,10 @@
-import React, {Component} from 'react';
+import React, { Component } from 'react';
+import { includes } from 'lodash';
+
 import EachPost from './EachPost';
 import posts from './posts.js';
 import Sidebar from './Sidebar';
 import Search from './Search';
-
-const ReactDOM = require('react-dom');
 
 class PostList extends Component {
   constructor() {
@@ -21,7 +21,11 @@ class PostList extends Component {
   }
 
   searchPage() {
-    console.log(this.state.searchString);
+    const target = this.state.searchString;
+    const result = this.state.allPosts.filter((post) => {
+      return includes(post, target);
+    });
+    console.log(result);
   }
 
   showOnlyOnePost(id) {
