@@ -16,7 +16,7 @@ class Sidebar extends Component {
       <div>
         <aside className="link-section">
           <Link to="/aboutme">
-            <img id="me" src="../../images/headshot.jpg" alt="Headshot of me."></img>
+            <img id="me" src="./headshot.jpg" alt="Headshot of me."></img>
           </Link>
 			    <RecentPosts posts={this.props.posts} showOnlyOnePost={this.showOnlyOnePost.bind(this)}/>
 		    </aside>
