@@ -25,7 +25,7 @@ class EachPost extends Component {
 			  <h2 className="each-post-headline" onClick={() => {this.showOnlyOnePost({id})} }>{title}</h2>
 			   <p className="date">Posted on {date}</p>
          {topLinks}
-				 <img src={image} alt="The image for the topic."></img>
+				 <img src={image} alt="The image for the topic." />
         { note ? <h4 className="note">{note}</h4> : ''}
 				 <p className="body">{body}</p>
          {secondPara ? <p className="second-para">{secondPara}</p> : ''}
