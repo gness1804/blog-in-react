@@ -51877,7 +51877,7 @@
 	}, {
 	  id: 6,
 	  title: 'Bluecifer\'s Revenge',
-	  image: '../../images/game-time.png',
+	  image: './game-time.png',
 	  github: 'https://github.com/gness1804/game-time',
 	  interactiveLink: 'https://gprocell927.github.io/game-time/',
 	  body: 'My fellow students Gabi Procell and Lacey Knaff and I just finished Bluecifer\'s Revenge, a side-scrolling game where you must keep your avatar, the eponymous demonic horse from Denver International Airport (DIA), from hitting airplanes or falling to the ground as he flies (yes, flies) back home to DIA. The airplanes get faster as the score increases, and I also added an "Easter Egg" that the intrepid gamer might just encounter.',
@@ -51887,7 +51887,7 @@
 	}, {
 	  id: 5,
 	  title: 'Idea Box',
-	  image: '../../images/idea-box.png',
+	  image: './idea-box.png',
 	  github: 'https://github.com/gness1804/IdeaBox',
 	  interactiveLink: 'https://adam-rice.github.io/IdeaBox/',
 	  body: 'So I\'ve been a bit sluggish on blogging...two projects back to back will do that do you. I\'m writing an update now on the first of these projects, known as "Idea Box", that I completed with Adam Rice, a fellow student in my cohort. Idea Box is an application that seems simple on the surface, but its execution involved many complex moving parts. The concept is as follows: the user enters in a title and body of an idea, which then both appear in separate lines at the bottom of the application. The application stores these attributes as well as the idea\'s "quality" ("genius", "plausible", or "swill") in local storage. The user can change an idea\'s quality, delete an idea, and search for text within the title and body of ideas presently on the page. Using JSON and local storage, the application keeps track of which ideas currently exist and their quality.',
@@ -51897,7 +51897,7 @@
 	}, {
 	  id: 4,
 	  title: 'A "Linked List"',
-	  image: '../../images/linked-list.png',
+	  image: './linked-list.png',
 	  github: 'https://github.com/gness1804/linked-list',
 	  interactiveLink: 'https://gness1804.github.io/linked-list/',
 	  body: 'I just completed my second project at Turing, a "linked list" with fellow student Alex Pilewski. Our project involved creating a site where the user could enter in a title and url of favorite sites. The program organizes the user\'s entries into bookmarks that can be toggle "read" and "unread". The user has the option of marking all bookmarks on the page as read, removing all bookmarks, and removing all read bookmarks. The program keeps track of the number of bookmarks on the page as well as the number of read and unread ones currently on the page.',
@@ -51907,7 +51907,7 @@
 	}, {
 	  id: 3,
 	  title: 'Number Guesser Project with Kinan Whyte',
-	  image: '../../images/number-guesser.png',
+	  image: './number-guesser.png',
 	  github: 'https://github.com/gness1804/number-guesser',
 	  interactiveLink: 'https://kswhyte.github.io/number-guesser/',
 	  body: 'I constructed a number guesser program with colleague Kinan Whyte during Module 1 at the Turing School of Software and Design, where I am a front-end engineering student. We created a program with basic functionality, albeit with a few hiccups. Our program accepts a number from the user (default range 0-100) and generates a pseudo-random number which it compares to the user\'s number. The program tells the user whether his/her number is too low, too high, out of the acceptable range, or not a number (such as text). If the user correctly guesses the computer\'s number, the program regenerates another pseudo-random value and adjusts the max and min by +10 and -10 respectively. The program also accepts optional max and min values from the user. Upon user submission of these values, the program regenerates a pseudo-random within the new range.',
@@ -51917,14 +51917,14 @@
 	}, {
 	  id: 2,
 	  title: 'My New Cairn Terrier Site!',
-	  image: '../../images/puck.jpg',
+	  image: './images/puck.jpg',
 	  interactiveLink: 'https://gness1804.github.io/cairn-terriers/',
 	  body: 'Check out my new Cairn Terrier site! It\'s a tribute to the dog breed coded from scratch. There\'s also a fun quiz where you can see how strong of a "fit" you are with a Cairn.',
 	  date: 'August 10, 2016.'
 	}, {
 	  id: 1,
 	  title: 'Charleston Wedding (May 21, 2016)',
-	  image: '../../images/charleston.jpeg',
+	  image: './images/charleston.jpeg',
 	  note: 'Photo taken by me in Charleston, May 21, 2016.',
 	  github: '',
 	  interactiveLink: '',
@@ -51994,7 +51994,7 @@
 	          _react2.default.createElement(
 	            _reactRouter.Link,
 	            { to: '/aboutme' },
-	            _react2.default.createElement('img', { id: 'me', src: '../../images/headshot.jpg', alt: 'Headshot of me.' })
+	            _react2.default.createElement('img', { id: 'me', src: './headshot.jpg', alt: 'Headshot of me.' })
 	          ),
 	          _react2.default.createElement(_RecentPosts2.default, { posts: this.props.posts, showOnlyOnePost: this.showOnlyOnePost.bind(this) })
 	        )
