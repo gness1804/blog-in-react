@@ -52217,7 +52217,7 @@
 	            null,
 	            "About Me"
 	          ),
-	          _react2.default.createElement("img", { src: "../../images/headshot.jpg", alt: "Headshot." }),
+	          _react2.default.createElement("img", { src: "./headshot.jpg", alt: "Headshot." }),
 	          _react2.default.createElement(
 	            "p",
 	            null,
