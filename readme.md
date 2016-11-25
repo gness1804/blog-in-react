@@ -1,6 +1,6 @@
 ##Personal Blog in React
 
-[https://gness1804.github.io/blog-in-react/](Check it out!)
+[Check it out!](https://gness1804.github.io/blog-in-react/)
 
 This is a rebuild of my personal blog using React and React Router. It contains the following improvements over the [last version](https://github.com/gness1804/Personal-Blog):
 
