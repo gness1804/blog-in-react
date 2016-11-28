@@ -51868,6 +51868,17 @@
 	  value: true
 	});
 	var posts = [{
+	  id: 8,
+	  title: 'Flash Shopper',
+	  image: '../../images/flash-shopper.png',
+	  note: '',
+	  github: 'https://github.com/gness1804/grocery-list-react',
+	  interactiveLink: 'https://grocery-list-caef5.firebaseapp.com/',
+	  body: 'So it\'s been quite a long time since I\'ve written an entry. A lot has happened in the world and in my life since then. Those curious about the various projects I have done can check out my project page (https://gness1804.github.io/portfolio-site/index.html#/projmenu); this entry will focus on one personal project that I have been working on called Flash Shopper. This is a grocery list app that allows the user to enter in an item with an aisle number, quantity, and a note; sort items alphabetically and by aisle; delete items; and delete all items from the page. It is a handy application that I use in my own grocery shopping.',
+	  secondPara: 'This application\'s evolution began in the summer, when I needed a convenient way to render my grocery list. My first attempt was a simple listing app that contained no local storage, since I did not yet know how to persist data (if you are curious, it is at https://github.com/gness1804/king-soopers-list). My second iteration involved local storage, but the main problem was that it only stored data on a given browser in one device. Thankfully, after learning about Firebase, I was able to implement this technology to solve this problem with my most recent version.',
+	  thirdPara: 'In the future, I hope to use Redux to allow easy editing of items and to add functionality to show when an item is in the cart.',
+	  date: 'November 27, 2016'
+	}, {
 	  id: 7,
 	  title: 'iOS Class with Erika Carlson, 10-02-16',
 	  image: './iOS-class.jpg',
