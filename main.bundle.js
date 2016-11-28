@@ -51870,7 +51870,7 @@
 	var posts = [{
 	  id: 8,
 	  title: 'Flash Shopper',
-	  image: '../../images/flash-shopper.png',
+	  image: './flash-shopper.png',
 	  note: '',
 	  github: 'https://github.com/gness1804/grocery-list-react',
 	  interactiveLink: 'https://grocery-list-caef5.firebaseapp.com/',
