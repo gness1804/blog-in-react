@@ -1,11 +1,11 @@
-$debug: false;
+$debug: true;
 
 $debug-border-style: 1px dotted red;
 $debug-background-color: magenta;
 
 @if ($debug) {
 
-  .mainmenu {
+  .link-section {
     border: $debug-border-style;
   }
 

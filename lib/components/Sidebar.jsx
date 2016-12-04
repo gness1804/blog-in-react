@@ -1,9 +1,7 @@
-import React, {Component} from 'react';
+import React, { Component } from 'react';
 import { Link } from 'react-router';
 
 import RecentPosts from './RecentPosts';
-
-const ReactDOM = require('react-dom');
 
 class Sidebar extends Component {
 
@@ -13,7 +11,7 @@ class Sidebar extends Component {
 
   render() {
     return (
-      <div>
+      <div className="sidebar">
         <aside className="link-section">
           <Link to="/aboutme">
             <img id="me" src="./headshot.jpg" alt="Headshot of me."></img>
