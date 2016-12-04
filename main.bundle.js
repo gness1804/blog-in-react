@@ -51868,6 +51868,16 @@
 	  value: true
 	});
 	var posts = [{
+	  id: 9,
+	  title: 'How to Draw an Owl',
+	  image: './images/how-to-draw-owl.jpg',
+	  note: 'Photo courtesy of Chelsea Skovgaard',
+	  github: 'https://github.com/gness1804/how-to-draw-an-owl',
+	  body: 'Yesterday, I presented a workshop for the Verou posse at Turing called "How to Draw an Owl." This was an interactive tutorial on HTML5 Canvas. If you\'re not familiar with Canvas, it is a powerful tool for drawing images using JavaScript.',
+	  secondPara: 'In the tutorial, we discussed how to draw rectangles, triangles, and circles using the technology. It turns out that Canvas is in some ways simple and complex: simple in that it involves relatively small number of methods for the core functionality, and complex in that there are so many moving parts and spatial challenges to consider, especially in larger projects. In our session, we are able to draw the head and discuss ways to create the beak.',
+	  thirdPara: 'It is great to work with such energetic and passionate people. I look forward to our next event!',
+	  date: 'December 3, 2016'
+	}, {
 	  id: 8,
 	  title: 'Flash Shopper',
 	  image: './flash-shopper.png',
@@ -51977,8 +51987,6 @@
 	
 	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 	
-	var ReactDOM = __webpack_require__(329);
-	
 	var Sidebar = function (_Component) {
 	  _inherits(Sidebar, _Component);
 	
@@ -51998,7 +52006,7 @@
 	    value: function render() {
 	      return _react2.default.createElement(
 	        'div',
-	        null,
+	        { className: 'sidebar' },
 	        _react2.default.createElement(
 	          'aside',
 	          { className: 'link-section' },
