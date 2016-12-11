@@ -12,7 +12,7 @@ class Header extends Component {
           <Link className="h1-link" to="/">
             <h1>Graham Nessler</h1>
           </Link>
-		      <h3>Aspiring developer, scholar, lover of cats and dogs.</h3>
+		      <h3>Web developer, scholar, lover of cats and dogs.</h3>
 		      <ul className="mainmenu">
 						<Link to="/" className="link1 current-page">
 						  <li>Home</li>

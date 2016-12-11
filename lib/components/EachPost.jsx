@@ -10,7 +10,7 @@ class EachPost extends Component {
 
     let topLinks;
 
-    const { title, date, image, note, body, github, interactiveLink, secondPara, thirdPara, id } = this.props;
+    const { title, date, image, note, body, github, interactiveLink, secondPara, thirdPara, id, alt } = this.props;
 
     if (github || interactiveLink) {
       topLinks = <div className="links-container-top">
@@ -25,8 +25,8 @@ class EachPost extends Component {
 			  <h2 className="each-post-headline" onClick={() => {this.showOnlyOnePost({id})} }>{title}</h2>
 			   <p className="date">Posted on {date}</p>
          {topLinks}
-				 <img src={image} alt="The image for the topic." />
-        { note ? <h4 className="note">{note}</h4> : ''}
+				 { image ? <img src={image} alt={alt} /> : ''}
+         { note ? <h4 className="note">{note}</h4> : ''}
 				 <p className="body">{body}</p>
          {secondPara ? <p className="second-para">{secondPara}</p> : ''}
          {thirdPara ? <p className="third-para">{thirdPara}</p> : ''}
