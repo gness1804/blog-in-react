@@ -4,7 +4,7 @@ class AboutMe extends Component {
 
   render() {
     return (
-      <div>
+      <div className="master-container">
         <div className="empty-space"></div>
         <div className="template">
 			    <h2>About Me</h2>
