@@ -295,7 +295,7 @@ textarea {
   margin: 0 15px;
 }
 
-.show-all-posts-button, .top-of-page-button {
+.show-all-posts-button, .top-of-page-button, .back-home-button {
   @include button-basic-formatting;
 	display: block;
 	margin-left: auto;
@@ -312,7 +312,7 @@ textarea {
 	margin-top: 15px;
 }
 
-.top-of-page-button-link {
+.top-of-page-button-link, .back-home-button-link {
   color: black;
 	text-decoration: none;
 
