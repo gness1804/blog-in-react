@@ -295,7 +295,7 @@ textarea {
   margin: 0 15px;
 }
 
-.show-all-posts-button {
+.show-all-posts-button, .top-of-page-button {
   @include button-basic-formatting;
 	display: block;
 	margin-left: auto;
@@ -304,6 +304,21 @@ textarea {
 
 	&:hover {
 		@include button-basic-formatting-hover;
+	}
+
+}
+
+.top-of-page-button {
+	margin-top: 15px;
+}
+
+.top-of-page-button-link {
+  color: black;
+	text-decoration: none;
+
+	&:visited {
+		color: black !important;
+		text-decoration: none;
 	}
 
 }
