@@ -58,7 +58,7 @@ class PostList extends Component {
 
     const { allPosts, showAllPosts } = this.state;
 
-    const sortedList = allPosts.sort((a, b) => { a.id > b.id });
+    const sortedList = allPosts.sort((a, b) => {return b.id - a.id});
 
     if (allPosts) {
       if (!this.state.showAllPosts) {
