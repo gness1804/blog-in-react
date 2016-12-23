@@ -6,9 +6,7 @@ class Application extends Component {
   render() {
     return (
       <div>
-        <Header />
         <section className="master-container">
-          {this.props.children}
         </section>
       </div>
     );
