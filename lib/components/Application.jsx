@@ -6,8 +6,6 @@ class Application extends Component {
   render() {
     return (
       <div>
-        <section className="master-container">
-        </section>
       </div>
     );
   }
