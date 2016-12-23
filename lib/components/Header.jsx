@@ -1,8 +1,6 @@
 import React, {Component} from 'react';
 import { Link } from 'react-router';
 
-const ReactDOM = require('react-dom');
-
 class Header extends Component {
 
   render() {
@@ -12,7 +10,7 @@ class Header extends Component {
           <Link className="h1-link" to="/">
             <h1>Graham Nessler</h1>
           </Link>
-		      <h3>Web developer, scholar, lover of cats and dogs.</h3>
+		      <h3>Web developer, scholar, lover of cats and dogs</h3>
 		      <ul className="mainmenu">
 						<Link to="/" className="link1 current-page">
 						  <li>Home</li>
@@ -24,6 +22,7 @@ class Header extends Component {
               <li>Portfolio</li>
 						</a>
 					</ul>
+          <hr />
 				</header>
       </div>
     );
