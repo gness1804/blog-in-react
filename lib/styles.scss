@@ -41,6 +41,7 @@ h3 {
 
 .master-container {
 	margin: auto;
+	text-align: center;
 	width: 1000px;
 }
 
@@ -114,6 +115,8 @@ input[type="submit"] {
 	background-color: white;
 	border: $body-border-standard;
 	margin-bottom: 60px;
+	margin-left: auto;
+	margin-right: auto;
 	text-align: center;
 	width: 700px;
 }
