@@ -76,7 +76,6 @@ class PostList extends Component {
     return (
       <div>
         <Search showAllPosts={this.showAllPosts.bind(this)} handleClick={() => { this.searchPage() }} recordSearchString={this.recordSearchString.bind(this)} />
-        <Sidebar posts={allPosts} showOnlyOnePost={this.showOnlyOnePost.bind(this)}/>
         {postList}
         <button className="show-all-posts-button" onClick={() => { this.toggleShowAllPosts() }}>{showAllPosts ? 'Hide Older Posts' : 'Show All Posts'}</button>
       </div>
