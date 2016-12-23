@@ -166,16 +166,18 @@ input[type="submit"] {
 }
 
 a:link {
-	color: #0000e6
-	// text-decoration: none;
+	color: #0000e6;
+	text-decoration: none;
 }
 
 a:visited {
 	color: magenta;
+	text-decoration: none;
 }
 
 a:hover {
 	color: red;
+	text-decoration: none;
 }
 
 .recent {
