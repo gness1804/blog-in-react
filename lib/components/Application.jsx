@@ -5,7 +5,7 @@ class Application extends Component {
 
   render() {
     return (
-      <div>
+      <div id="top">
       </div>
     );
   }
