@@ -1,5 +1,4 @@
 import React, {Component} from 'react';
-import { Link } from 'react-router';
 
 class Header extends Component {
 
@@ -7,21 +6,22 @@ class Header extends Component {
     return (
       <div>
         <header>
-          <Link className="h1-link" to="/">
             <h1>Graham Nessler</h1>
-          </Link>
 		      <h3>Web developer, scholar, lover of cats and dogs</h3>
-		      <ul className="mainmenu">
-						<Link to="/" className="link1 current-page">
-						  <li>Home</li>
-						</Link>
-						<Link to="/aboutme" className="link1">
-							<li>About Me</li>
-						</Link>
-						<a className="link1" href="http://www.grahamnessler.com" target="blank">
+          <ul className="mainmenu">
+            <a className="link1" href="http://www.grahamnessler.com/" target="_blank">
               <li>Portfolio</li>
-						</a>
-					</ul>
+            </a>
+            <a className="link1" href="https://github.com/gness1804" target="_blank">
+              <li>Github</li>
+            </a>
+            <a className="link1" href="https://www.linkedin.com/in/graham-nessler-b9025756" target="_blank">
+              <li>LinkedIn</li>
+            </a>
+            <a className="link1" href="https://twitter.com/gness1804" target="_blank">
+              <li>Twitter</li>
+            </a>
+          </ul>
           <hr />
 				</header>
       </div>
