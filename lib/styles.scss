@@ -49,25 +49,28 @@ h3 {
 	text-align: center;
 }
 
+.truncated {
+	max-height: 800px;
+	overflow: auto;
+}
+
 .mainmenu li {
-	background-color:  #a6a6a6;
+	background-color:  white;
 	border-radius: 5px;
 	border: 2px solid gray;
 	display: inline;
 	font-size: 25px;
 	margin-right: 60px;
-	padding-right: 50px;
+	padding: 5px 20px;
 	position: relative;
 }
 
 .mainmenu li:hover {
-	color: white;
+	background-color: rgb(236, 234, 228);
+	color: black !important;
+	cursor: pointer;
 }
 
-.truncated {
-	height: 800px;
-	overflow: auto;
-}
 
 a.link1:hover {
 	color: red;

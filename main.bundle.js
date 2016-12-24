@@ -8234,8 +8234,8 @@
 	      'div',
 	      null,
 	      _react2.default.createElement(_Header2.default, null),
-	      _react2.default.createElement(_reactRouter.Match, { exactly: true, pattern: '/', component: _Application2.default }),
-	      _react2.default.createElement(_reactRouter.Match, { exactly: true, pattern: '/', component: _PostList2.default }),
+	      _react2.default.createElement(_reactRouter.Match, { pattern: '/', component: _Application2.default }),
+	      _react2.default.createElement(_reactRouter.Match, { pattern: '/', component: _PostList2.default }),
 	      _react2.default.createElement(_reactRouter.Match, { exactly: true, pattern: '/aboutme', component: _AboutMe2.default }),
 	      _react2.default.createElement(_reactRouter.Miss, { component: _NotFound2.default })
 	    )

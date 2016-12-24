@@ -3,7 +3,6 @@ import { includes } from 'lodash';
 
 import EachPost from './EachPost';
 import posts from './posts.js';
-import Sidebar from './Sidebar';
 import Search from './Search';
 
 class PostList extends Component {
@@ -54,7 +53,6 @@ class PostList extends Component {
   render() {
     let postList;
     let fivePostsOrAll;
-    let sidebarPosts;
 
     const { allPosts, showAllPosts } = this.state;
 
