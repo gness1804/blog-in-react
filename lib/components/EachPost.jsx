@@ -10,13 +10,13 @@ class EachPost extends Component {
 
     let topLinks;
 
-    const { title, date, image, note, body, github, interactiveLink, secondPara, thirdPara, id, alt } = this.props;
+    const { title, date, image, note, body, github, interactiveLink, secondPara, thirdPara, id, alt, interactiveLinkTitle } = this.props;
 
     if (github || interactiveLink) {
-      topLinks = <div className="links-container-top">
+      topLinks = (<div className="links-container-top">
         {github ? <a href={github}><h3 className="github">Github</h3></a> : ''}
-        {interactiveLink ? <a href={interactiveLink}><h3 className="check-it-out">Check it Out!</h3></a> : ''}
-      </div>;
+        {interactiveLink ? <a href={interactiveLink}><h3 className="check-it-out">{interactiveLinkTitle || 'Check It Out!'}</h3></a> : ''}
+      </div>);
     }
 
 
