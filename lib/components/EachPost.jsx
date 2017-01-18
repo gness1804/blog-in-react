@@ -15,7 +15,7 @@ class EachPost extends Component {
     if (github || interactiveLink) {
       topLinks = (<div className="links-container-top">
         {github ? <a href={github}><h3 className="github">Github</h3></a> : ''}
-        {interactiveLink ? <a href={interactiveLink}><h3 className="check-it-out">{interactiveLinkTitle || 'Check It Out!'}</h3></a> : ''}
+        {interactiveLink ? <a href={interactiveLink} target="blank" rel="noopener noreferrer"><h3 className="check-it-out">{interactiveLinkTitle || 'Check It Out!'}</h3></a> : ''}
       </div>);
     }
 
