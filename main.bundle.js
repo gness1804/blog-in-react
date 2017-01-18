@@ -29568,7 +29568,7 @@
 	            { className: "mainmenu" },
 	            _react2.default.createElement(
 	              "a",
-	              { className: "link1", href: "http://www.grahamnessler.com/", target: "_blank" },
+	              { className: "link1", href: "http://www.grahamnessler.com/", target: "_blank", rel: "noopener noreferrer" },
 	              _react2.default.createElement(
 	                "li",
 	                null,
@@ -29577,7 +29577,7 @@
 	            ),
 	            _react2.default.createElement(
 	              "a",
-	              { className: "link1", href: "https://github.com/gness1804", target: "_blank" },
+	              { className: "link1", href: "https://github.com/gness1804", target: "_blank", rel: "noopener noreferrer" },
 	              _react2.default.createElement(
 	                "li",
 	                null,
@@ -29586,7 +29586,7 @@
 	            ),
 	            _react2.default.createElement(
 	              "a",
-	              { className: "link1", href: "https://www.linkedin.com/in/graham-nessler-b9025756", target: "_blank" },
+	              { className: "link1", href: "https://www.linkedin.com/in/graham-nessler-b9025756", target: "_blank", rel: "noopener noreferrer" },
 	              _react2.default.createElement(
 	                "li",
 	                null,
@@ -29595,7 +29595,7 @@
 	            ),
 	            _react2.default.createElement(
 	              "a",
-	              { className: "link1", href: "https://twitter.com/gness1804", target: "_blank" },
+	              { className: "link1", href: "https://twitter.com/gness1804", target: "_blank", rel: "noopener noreferrer" },
 	              _react2.default.createElement(
 	                "li",
 	                null,
@@ -46921,7 +46921,8 @@
 	          secondPara = _props.secondPara,
 	          thirdPara = _props.thirdPara,
 	          id = _props.id,
-	          alt = _props.alt;
+	          alt = _props.alt,
+	          interactiveLinkTitle = _props.interactiveLinkTitle;
 	
 	
 	      if (github || interactiveLink) {
@@ -46939,11 +46940,11 @@
 	          ) : '',
 	          interactiveLink ? _react2.default.createElement(
 	            "a",
-	            { href: interactiveLink },
+	            { href: interactiveLink, target: "blank", rel: "noopener noreferrer" },
 	            _react2.default.createElement(
 	              "h3",
 	              { className: "check-it-out" },
-	              "Check it Out!"
+	              interactiveLinkTitle || 'Check It Out!'
 	            )
 	          ) : ''
 	        );
@@ -47006,6 +47007,17 @@
 	  value: true
 	});
 	var posts = [{
+	  id: 12,
+	  title: 'ReactJS Meetup Talk on Bash Scripting in Webpack',
+	  image: './bash-scripts-talk.png',
+	  alt: 'Shot from the slidedeck for the talk.',
+	  interactiveLink: 'https://docs.google.com/presentation/d/1zdsfh6ut2TF5NOwfsC9LhXUiyQ_QXynoif1oVJV4MpQ/edit?usp=sharing',
+	  interactiveLinkTitle: 'Link to the Slide Deck',
+	  body: 'I was happy to be able to present my first ReactJS meetup talk on Bash scripting with Webpack. In front of perhaps 70 or 80 people, I discussed how I have used Bash scripts to make the process of configuring Webpack less painful. In a nutshell, these scripts allow one to do a lot of the repetitive and tedious work of setting up the file structure, the config, boilerplate code, etc (and isn\'t the whole point of programming to make our lives easier and leave the repetitive stuff to the machines?) I got a good reception and some thought-provoking questions, especially as concerns how this approach might translate to Windows. All in all, it was a very rewarding event! If you want to learn more, check out the slide deck (linked above).',
+	  secondPara: '',
+	  thirdPara: '',
+	  date: 'January 17, 2017'
+	}, {
 	  id: 11,
 	  title: 'Whiteboarding 101',
 	  image: './whiteboarding.jpg',
